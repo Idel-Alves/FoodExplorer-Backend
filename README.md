@@ -41,10 +41,35 @@ O back-end, que gerencia a lógica e o armazenamento de dados, pode ser acessado
   <li>PM2</li>
 </ul>
 
-## Deploy 🚀
+## Utilização 🚀
 ⚠️ **Importante:** Este projeto utiliza uma hospedagem gratuita para o back-end, o que pode ocasionar alguns atrasos no tempo de resposta do servidor.
 
 O back-end do projeto está hospedado no endereço https://foodexplorer-backend-6a6y.onrender.com . A aplicação Food Explorer está disponível para uso [aqui](https://foodexplorer-idel.netlify.app/)
+
+Você também pode executá-lo em sua máquina localmente. Certifique-se de ter o Node.js e o npm instalados antes de prosseguir com as etapas abaixo:
+
+## Como rodar o projeto
+
+### 1. Clone o projeto
+$ git clone https://github.com/Idel-Alves/FoodExplorer-Backend.git
+
+### 2. Acesse a pasta do projeto:
+$ cd FoodExplorer-Backend
+
+### 3. Instale as dependências:
+$ npm install
+
+### 4. npm run dev
+**Se tudo correr bem, esta mensagem aparecerá no terminal:**
+Server is running on port 3000
+
+### 5. Execute as migrações:
+$ npm run migrate
+
+### 6. Inicie o servidor:
+$ npm start
+
+⚠️ **Importante:** Crie um arquivo .env de acordo com o arquivo .env.example e preencha os campos AUTH_SECRET e PORT com suas respectivas informações.
 <ul>
    <li>Para gerar o valor do campo AUTH_SECRET, você pode usar o MD5 Hash Generator para criar uma sequência de caracteres segura.</li>
    <li>Insira o número da porta desejada no campo PORT para iniciar o servidor da aplicação.</li>
